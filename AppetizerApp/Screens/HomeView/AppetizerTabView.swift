@@ -22,13 +22,13 @@ struct AppetizerTabView: View {
                     Text("Cart")
                 }
             
-            AccountView()
+            SettingsView()
                 .tabItem {
-                    Image(systemName: "person")
-                    Text("Account")
+                    Image(systemName: "gear")
+                    Text("Settings")
                 }
         }
-        .accentColor(Color("brandPrimaryColor"))
+        .accentColor(.brandPrimaryColor)
     }
 }
 
