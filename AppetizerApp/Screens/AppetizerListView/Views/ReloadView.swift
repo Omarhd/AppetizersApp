@@ -27,7 +27,6 @@ struct ReloadView: View {
 
             Button {
                 // handle action
-                viewModel.faildToLoad = false
                 viewModel.getAppetizers()
             } label: {
                 Text("Retry")

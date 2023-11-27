@@ -38,6 +38,7 @@
 		1699B9A72B0DA51B007DC331 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699B9A62B0DA51B007DC331 /* EmptyState.swift */; };
 		1699B9AB2B0E4C03007DC331 /* StandardButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699B9AA2B0E4C03007DC331 /* StandardButtonStyle.swift */; };
 		1699B9AD2B10D55D007DC331 /* ReloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699B9AC2B10D55D007DC331 /* ReloadView.swift */; };
+		1699B9AF2B14B2AB007DC331 /* AppetizerDetailsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699B9AE2B14B2AB007DC331 /* AppetizerDetailsViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -92,6 +93,7 @@
 		1699B9A62B0DA51B007DC331 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
 		1699B9AA2B0E4C03007DC331 /* StandardButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardButtonStyle.swift; sourceTree = "<group>"; };
 		1699B9AC2B10D55D007DC331 /* ReloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadView.swift; sourceTree = "<group>"; };
+		1699B9AE2B14B2AB007DC331 /* AppetizerDetailsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerDetailsViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -269,6 +271,7 @@
 			children = (
 				1699A95F2B00DB1B009259EB /* Views */,
 				1699A9582B00D94D009259EB /* AppetizerDetilsView.swift */,
+				1699B9AE2B14B2AB007DC331 /* AppetizerDetailsViewModel.swift */,
 			);
 			path = AppetizerDetailsView;
 			sourceTree = "<group>";
@@ -452,6 +455,7 @@
 				1699A9422B00899E009259EB /* CartViewModel.swift in Sources */,
 				1699A9472B00A13D009259EB /* AppetizerCell.swift in Sources */,
 				1699A94A2B00AB22009259EB /* Emuns.swift in Sources */,
+				1699B9AF2B14B2AB007DC331 /* AppetizerDetailsViewModel.swift in Sources */,
 				1699A9512B00C071009259EB /* AppetizerSkeletonView.swift in Sources */,
 				1699A90A2B00761C009259EB /* AppetizerTabView.swift in Sources */,
 				1699A95C2B00D9B2009259EB /* XButtonView.swift in Sources */,

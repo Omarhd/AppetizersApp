@@ -13,10 +13,26 @@ struct AppetizerCell: View {
     
     var body: some View {
         HStack(spacing: 12) {
-            AppetizerRemoteImageLoader(urlString: appetizer.imageURL)
-                .scaledToFit()
-                .frame(width: 120, height: 90)
-                .cornerRadius(12)
+//            AppetizerRemoteImageLoader(urlString: appetizer.imageURL)
+//                .scaledToFit()
+//                .frame(width: 120, height: 90)
+//                .cornerRadius(12)
+            
+            AsyncImage(url: URL(string: appetizer.imageURL)) { image in
+                image
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 120, height: 90)
+                    .cornerRadius(12)
+
+            } placeholder: {
+                Image("food-place-holder")
+                    .resizable()
+                    .scaledToFit()
+                    .frame(width: 120, height: 90)
+                    .cornerRadius(12)
+            }
+
            
             VStack(alignment: .leading, spacing: 12) {
                 Text(appetizer.name)
@@ -28,7 +44,7 @@ struct AppetizerCell: View {
                     .fontWeight(.semibold)
                     .foregroundColor(Color(.gray))
             }
-            .padding(.leading)
+            .padding()
         }
     }
 }

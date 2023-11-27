@@ -41,3 +41,17 @@ struct AppetizerSkeletonView: View {
 #Preview {
     AppetizerSkeletonView()
 }
+
+struct LoadingSkeletonView: View {
+    var body: some View {
+        VStack {
+            ForEach(0..<4) { _ in
+                AppetizerSkeletonView()
+            }
+        }
+    }
+}
+
+#Preview {
+    LoadingSkeletonView()
+}

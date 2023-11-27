@@ -31,6 +31,8 @@ class NetworkManager {
         
         let (data, response) = try await URLSession.shared.data(from: request.url!)
         
+        print("response \(response)")
+        
         guard let httpResponse = response as? HTTPURLResponse, (200...299).contains(httpResponse.statusCode) else {
             throw NetworkError.unableToComplete
         }
@@ -62,7 +64,7 @@ class NetworkManager {
                 return
             }
             
-            guard let data = data else {
+            guard let data else {
                 completion(.failure(NetworkError.noData))
                 return
             }

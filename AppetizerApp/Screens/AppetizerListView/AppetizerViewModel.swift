@@ -13,38 +13,46 @@ final class AppetizerViewModel: ObservableObject {
     @Published var selectedAppetizer: Appetizer?
     @Published var alertItem: AlertItem?
     @Published var isLoading: Bool = true
-    @Published var faildToLoad: Bool = false
-
     @Published var isShowingDetailsView: Bool = false
 
     // Assuming you have an asynchronous function that can call the request method
     func loads() {
         Task {
             do {
-                appetizers = try await NetworkManager.shared.requestAsync(path: "appetizers", method: .get)
+                let respnose: AppetizerResponse = try await NetworkManager.shared.requestAsync(path: "appetizers", method: .get)
+                appetizers = respnose.request
                 isLoading = false
-                faildToLoad = false
-                // Handle the result
-                print("results = \(appetizers)")
+                print("results = \(respnose)")
             } catch {
                 // Handle the error
-                self.alertItem = AlertContext.invalidData
                 isLoading = false
-                faildToLoad = true
+                if let appError = error as? NetworkError {
+                    switch appError {
+                    case .invalidURL:
+                        alertItem = AlertContext.invalidURL
+                    
+                    case .noData:
+                        alertItem = AlertContext.invalidData
+
+                    case .decodingError:
+                        alertItem = AlertContext.decodingError
+
+                    case .unableToComplete:
+                        alertItem = AlertContext.unableToComplete
+
+                    }
+                }
             }
         }
     }
 
     func getAppetizers() {
-        isLoading = true
-        faildToLoad = false
         NetworkManager.shared.request(path: "appetizers", method: .get) { (result: Result<AppetizerResponse, NetworkError>) in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let appetizers):
                     self.appetizers = appetizers.request
                     self.isLoading = false
-                    self.faildToLoad = false
                 case .failure(let error):
                     switch error {
                     case .invalidURL:
@@ -54,15 +62,12 @@ final class AppetizerViewModel: ObservableObject {
                     case .decodingError:
                         self.alertItem = AlertContext.invalidResponse
                     case .unableToComplete:
-                        print("")
                         self.alertItem = AlertContext.unableToComplete
                     }
                     print("Error fetching post: \(error)")
                 }
             }
         }
-        isLoading = false
-        faildToLoad = false
     }
     
     func loadImage(path: String) {
