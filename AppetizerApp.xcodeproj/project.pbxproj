@@ -17,7 +17,7 @@
 		1699A9322B0076CC009259EB /* AppetizerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A9312B0076CC009259EB /* AppetizerListView.swift */; };
 		1699A9362B007718009259EB /* CartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A9352B007718009259EB /* CartView.swift */; };
 		1699A93E2B008946009259EB /* AppetizerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A93D2B008946009259EB /* AppetizerViewModel.swift */; };
-		1699A9422B00899E009259EB /* CartviewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A9412B00899E009259EB /* CartviewModel.swift */; };
+		1699A9422B00899E009259EB /* CartViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A9412B00899E009259EB /* CartViewModel.swift */; };
 		1699A9442B008E70009259EB /* appetizerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A9432B008E70009259EB /* appetizerModel.swift */; };
 		1699A9472B00A13D009259EB /* AppetizerCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A9462B00A13D009259EB /* AppetizerCell.swift */; };
 		1699A94A2B00AB22009259EB /* Emuns.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A9492B00AB22009259EB /* Emuns.swift */; };
@@ -31,13 +31,13 @@
 		1699A95E2B00DA0C009259EB /* PrimaryButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A95D2B00DA0C009259EB /* PrimaryButtonView.swift */; };
 		1699A9612B00DEC1009259EB /* NutritionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A9602B00DEC1009259EB /* NutritionView.swift */; };
 		1699A9632B00E35C009259EB /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A9622B00E35C009259EB /* String.swift */; };
-		1699A97C2B01CEFA009259EB /* QRCodePreviewerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699A97B2B01CEFA009259EB /* QRCodePreviewerView.swift */; };
-		1699B98E2B0434B2007DC331 /* SetitngsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699B98D2B0434B2007DC331 /* SetitngsView.swift */; };
-		1699B9902B0434DD007DC331 /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699B98F2B0434DD007DC331 /* SettingsViewModel.swift */; };
-		1699B9922B04350B007DC331 /* SettingsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699B9912B04350B007DC331 /* SettingsModel.swift */; };
-		1699B9942B043530007DC331 /* EditProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699B9932B043530007DC331 /* EditProfileView.swift */; };
-		1699B9962B043702007DC331 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699B9952B043702007DC331 /* ImagePicker.swift */; };
 		1699B9982B045182007DC331 /* QRCodeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699B9972B045182007DC331 /* QRCodeButton.swift */; };
+		1699B9A12B0D9367007DC331 /* UserView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699B9A02B0D9367007DC331 /* UserView.swift */; };
+		1699B9A32B0D93FA007DC331 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699B9A22B0D93FA007DC331 /* UserViewModel.swift */; };
+		1699B9A52B0D9AC8007DC331 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699B9A42B0D9AC8007DC331 /* UserModel.swift */; };
+		1699B9A72B0DA51B007DC331 /* EmptyState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699B9A62B0DA51B007DC331 /* EmptyState.swift */; };
+		1699B9AB2B0E4C03007DC331 /* StandardButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699B9AA2B0E4C03007DC331 /* StandardButtonStyle.swift */; };
+		1699B9AD2B10D55D007DC331 /* ReloadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1699B9AC2B10D55D007DC331 /* ReloadView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -71,7 +71,7 @@
 		1699A9312B0076CC009259EB /* AppetizerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerListView.swift; sourceTree = "<group>"; };
 		1699A9352B007718009259EB /* CartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartView.swift; sourceTree = "<group>"; };
 		1699A93D2B008946009259EB /* AppetizerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerViewModel.swift; sourceTree = "<group>"; };
-		1699A9412B00899E009259EB /* CartviewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartviewModel.swift; sourceTree = "<group>"; };
+		1699A9412B00899E009259EB /* CartViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CartViewModel.swift; sourceTree = "<group>"; };
 		1699A9432B008E70009259EB /* appetizerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = appetizerModel.swift; sourceTree = "<group>"; };
 		1699A9462B00A13D009259EB /* AppetizerCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppetizerCell.swift; sourceTree = "<group>"; };
 		1699A9492B00AB22009259EB /* Emuns.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emuns.swift; sourceTree = "<group>"; };
@@ -85,13 +85,13 @@
 		1699A95D2B00DA0C009259EB /* PrimaryButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryButtonView.swift; sourceTree = "<group>"; };
 		1699A9602B00DEC1009259EB /* NutritionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NutritionView.swift; sourceTree = "<group>"; };
 		1699A9622B00E35C009259EB /* String.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
-		1699A97B2B01CEFA009259EB /* QRCodePreviewerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodePreviewerView.swift; sourceTree = "<group>"; };
-		1699B98D2B0434B2007DC331 /* SetitngsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetitngsView.swift; sourceTree = "<group>"; };
-		1699B98F2B0434DD007DC331 /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
-		1699B9912B04350B007DC331 /* SettingsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsModel.swift; sourceTree = "<group>"; };
-		1699B9932B043530007DC331 /* EditProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileView.swift; sourceTree = "<group>"; };
-		1699B9952B043702007DC331 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		1699B9972B045182007DC331 /* QRCodeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRCodeButton.swift; sourceTree = "<group>"; };
+		1699B9A02B0D9367007DC331 /* UserView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserView.swift; sourceTree = "<group>"; };
+		1699B9A22B0D93FA007DC331 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		1699B9A42B0D9AC8007DC331 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		1699B9A62B0DA51B007DC331 /* EmptyState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyState.swift; sourceTree = "<group>"; };
+		1699B9AA2B0E4C03007DC331 /* StandardButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StandardButtonStyle.swift; sourceTree = "<group>"; };
+		1699B9AC2B10D55D007DC331 /* ReloadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReloadView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,7 +194,7 @@
 			isa = PBXGroup;
 			children = (
 				1699A9352B007718009259EB /* CartView.swift */,
-				1699A9412B00899E009259EB /* CartviewModel.swift */,
+				1699A9412B00899E009259EB /* CartViewModel.swift */,
 			);
 			path = CartView;
 			sourceTree = "<group>";
@@ -214,7 +214,7 @@
 				1699A9372B0088D7009259EB /* AppetizerListView */,
 				1699A9572B00D927009259EB /* AppetizerDetailsView */,
 				1699A9392B0088F9009259EB /* CartView */,
-				1699A9642B019119009259EB /* Settings */,
+				1699B99F2B0D9340007DC331 /* User */,
 			);
 			path = Screens;
 			sourceTree = "<group>";
@@ -232,6 +232,7 @@
 			children = (
 				1699A9462B00A13D009259EB /* AppetizerCell.swift */,
 				1699A9502B00C071009259EB /* AppetizerSkeletonView.swift */,
+				1699B9AC2B10D55D007DC331 /* ReloadView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -278,6 +279,8 @@
 				1699A95B2B00D9B2009259EB /* XButtonView.swift */,
 				1699A95D2B00DA0C009259EB /* PrimaryButtonView.swift */,
 				1699B9972B045182007DC331 /* QRCodeButton.swift */,
+				1699B9A62B0DA51B007DC331 /* EmptyState.swift */,
+				1699B9AA2B0E4C03007DC331 /* StandardButtonStyle.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -290,25 +293,14 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
-		1699A9642B019119009259EB /* Settings */ = {
+		1699B99F2B0D9340007DC331 /* User */ = {
 			isa = PBXGroup;
 			children = (
-				1699B9862B02CC0D007DC331 /* QrCode Viewer */,
-				1699B98D2B0434B2007DC331 /* SetitngsView.swift */,
-				1699B98F2B0434DD007DC331 /* SettingsViewModel.swift */,
-				1699B9912B04350B007DC331 /* SettingsModel.swift */,
-				1699B9932B043530007DC331 /* EditProfileView.swift */,
-				1699B9952B043702007DC331 /* ImagePicker.swift */,
+				1699B9A02B0D9367007DC331 /* UserView.swift */,
+				1699B9A22B0D93FA007DC331 /* UserViewModel.swift */,
+				1699B9A42B0D9AC8007DC331 /* UserModel.swift */,
 			);
-			path = Settings;
-			sourceTree = "<group>";
-		};
-		1699B9862B02CC0D007DC331 /* QrCode Viewer */ = {
-			isa = PBXGroup;
-			children = (
-				1699A97B2B01CEFA009259EB /* QRCodePreviewerView.swift */,
-			);
-			path = "QrCode Viewer";
+			path = User;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -442,31 +434,31 @@
 			buildActionMask = 2147483647;
 			files = (
 				1699A94F2B00B823009259EB /* AlertContext.swift in Sources */,
+				1699B9A32B0D93FA007DC331 /* UserViewModel.swift in Sources */,
 				1699B9982B045182007DC331 /* QRCodeButton.swift in Sources */,
+				1699B9A72B0DA51B007DC331 /* EmptyState.swift in Sources */,
 				1699A9542B00CE90009259EB /* Colors.swift in Sources */,
-				1699B9962B043702007DC331 /* ImagePicker.swift in Sources */,
 				1699A94C2B00AB57009259EB /* NetworkManager.swift in Sources */,
 				1699A9362B007718009259EB /* CartView.swift in Sources */,
 				1699A93E2B008946009259EB /* AppetizerViewModel.swift in Sources */,
+				1699B9AB2B0E4C03007DC331 /* StandardButtonStyle.swift in Sources */,
 				1699A9562B00D319009259EB /* ImageLoader.swift in Sources */,
+				1699B9A52B0D9AC8007DC331 /* UserModel.swift in Sources */,
 				1699A95E2B00DA0C009259EB /* PrimaryButtonView.swift in Sources */,
 				1699A9442B008E70009259EB /* appetizerModel.swift in Sources */,
 				1699A9612B00DEC1009259EB /* NutritionView.swift in Sources */,
 				1699A9592B00D94D009259EB /* AppetizerDetilsView.swift in Sources */,
-				1699B98E2B0434B2007DC331 /* SetitngsView.swift in Sources */,
-				1699A9422B00899E009259EB /* CartviewModel.swift in Sources */,
-				1699B9922B04350B007DC331 /* SettingsModel.swift in Sources */,
+				1699B9AD2B10D55D007DC331 /* ReloadView.swift in Sources */,
+				1699A9422B00899E009259EB /* CartViewModel.swift in Sources */,
 				1699A9472B00A13D009259EB /* AppetizerCell.swift in Sources */,
 				1699A94A2B00AB22009259EB /* Emuns.swift in Sources */,
 				1699A9512B00C071009259EB /* AppetizerSkeletonView.swift in Sources */,
 				1699A90A2B00761C009259EB /* AppetizerTabView.swift in Sources */,
 				1699A95C2B00D9B2009259EB /* XButtonView.swift in Sources */,
-				1699B9942B043530007DC331 /* EditProfileView.swift in Sources */,
 				1699A9632B00E35C009259EB /* String.swift in Sources */,
 				1699A9082B00761C009259EB /* AppetizerAppApp.swift in Sources */,
-				1699A97C2B01CEFA009259EB /* QRCodePreviewerView.swift in Sources */,
 				1699A9322B0076CC009259EB /* AppetizerListView.swift in Sources */,
-				1699B9902B0434DD007DC331 /* SettingsViewModel.swift in Sources */,
+				1699B9A12B0D9367007DC331 /* UserView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

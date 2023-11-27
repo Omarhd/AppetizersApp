@@ -13,16 +13,38 @@ final class AppetizerViewModel: ObservableObject {
     @Published var selectedAppetizer: Appetizer?
     @Published var alertItem: AlertItem?
     @Published var isLoading: Bool = true
+    @Published var faildToLoad: Bool = false
 
     @Published var isShowingDetailsView: Bool = false
 
+    // Assuming you have an asynchronous function that can call the request method
+    func loads() {
+        Task {
+            do {
+                appetizers = try await NetworkManager.shared.requestAsync(path: "appetizers", method: .get)
+                isLoading = false
+                faildToLoad = false
+                // Handle the result
+                print("results = \(appetizers)")
+            } catch {
+                // Handle the error
+                self.alertItem = AlertContext.invalidData
+                isLoading = false
+                faildToLoad = true
+            }
+        }
+    }
+
     func getAppetizers() {
+        isLoading = true
+        faildToLoad = false
         NetworkManager.shared.request(path: "appetizers", method: .get) { (result: Result<AppetizerResponse, NetworkError>) in
             DispatchQueue.main.async {
                 switch result {
                 case .success(let appetizers):
                     self.appetizers = appetizers.request
                     self.isLoading = false
+                    self.faildToLoad = false
                 case .failure(let error):
                     switch error {
                     case .invalidURL:
@@ -39,6 +61,8 @@ final class AppetizerViewModel: ObservableObject {
                 }
             }
         }
+        isLoading = false
+        faildToLoad = false
     }
     
     func loadImage(path: String) {
@@ -46,7 +70,7 @@ final class AppetizerViewModel: ObservableObject {
             switch image {
             case .none:
                 print("no images")
-            case .some(let image):
+            case .some(_):
                 print("hellloo")
             }
         }

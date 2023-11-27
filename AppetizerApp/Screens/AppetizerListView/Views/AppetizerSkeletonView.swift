@@ -33,6 +33,7 @@ struct AppetizerSkeletonView: View {
                     .foregroundColor(Color.gray.opacity(0.5))
             }
         }
+        .padding(.vertical, 8)
         .opacity(0.7) // Adjust the opacity as needed
     }
 }

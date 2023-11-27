@@ -10,14 +10,15 @@ import SwiftUI
 struct PrimaryButtonView: View {
     
     let title: LocalizedStringKey
-
+    
     var body: some View {
         Text(title)
-        .frame(width: 260, height: 50)
-        .foregroundColor(.white)
-        .background(.brandPrimary.gradient)
-        .cornerRadius(12)
-        .padding(.bottom)
+            .font(.title3)
+            .fontWeight(.semibold)
+            .frame(width: 260, height: 50)
+            .foregroundColor(.white)
+            .background(Color.brandPrimary)
+            .cornerRadius(10)
     }
 }
 

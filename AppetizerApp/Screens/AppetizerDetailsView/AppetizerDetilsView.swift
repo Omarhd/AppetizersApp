@@ -9,57 +9,63 @@ import SwiftUI
 
 struct AppetizerDetilsView: View {
     
-    let appetizer: Appetizer
-    @Binding var isShowingDetailsView: Bool
-    
-    var body: some View {
-        VStack(spacing: 20) {
-            AppetizerRemoteImageLoader(urlString: appetizer.imageURL)
-                .frame(width: 320, height: 252)
-            
-            VStack(spacing: 12) {
-                Text(appetizer.name)
-                    .font(.title)
-                    .fontWeight(.bold)
-                    .multilineTextAlignment(.center)
-                    .minimumScaleFactor(0.5)
-                
-                Text(appetizer.description)
-                    .font(.caption)
-                    .fontWeight(.medium)
-                    .foregroundColor(.gray)
-                    .multilineTextAlignment(.center)
-                    .minimumScaleFactor(0.6)
-                                
-                NutritionView(appetizer: appetizer)
-
-            }
-            
-            Spacer()
-            
-            Button {
-
-            } label: {
-                PrimaryButtonView(title: "$\(appetizer.price, specifier: "%.2f") - Place Order")
-            }
-            
-        }
-        .frame(width: 320, height: 560)
-        .background(Color(.systemBackground))
-        .cornerRadius(25)
-        .shadow(color: Color(.label), radius: 25)
-        .overlay(Button {
-            withAnimation {
-                isShowingDetailsView = false
-            }
-        }label: {
-            XButtonView()
-                .shadow(radius: 10)
-        }, alignment: .topTrailing)
+    @EnvironmentObject var order: CartViewModel
         
-    }
+        let appetizer: Appetizer
+        @Binding var isShowingDetail: Bool
+        
+        var body: some View {
+            VStack {
+                AppetizerRemoteImageLoader(urlString: appetizer.imageURL)
+                    .aspectRatio(contentMode: .fit)
+                    .frame(width: 300, height: 225)
+                
+                VStack {
+                    Text(appetizer.name)
+                        .font(.title2)
+                        .fontWeight(.semibold)
+                    
+                    Text(appetizer.description)
+                        .multilineTextAlignment(.center)
+                        .font(.body)
+                        .padding()
+                    
+                    HStack(spacing: 40) {
+                        NutritionView(title: "Calories", value: "\(appetizer.calories)")
+                        NutritionView(title: "Carbs", value: "\(appetizer.carbs) g")
+                        NutritionView(title: "Protein", value: "\(appetizer.protein) g")
+                    }
+                }
+                
+                Spacer()
+                
+                Button {
+                    order.add(appetizer)
+                    isShowingDetail = false
+                } label: {
+    //                APButton(title: "$\(appetizer.price, specifier: "%.2f") - Add to Order")
+                    Text("$\(appetizer.price, specifier: "%.2f") - Add to Order")
+                }
+                .modifier(StandardButtonStyle())
+//                .standardButtonStyle()
+//                .standardButtonStyle()
+//                .buttonStyle(.bordered)
+//                .tint(.accentColor)
+//                .controlSize(.large)
+                .padding(.bottom, 30)
+            }
+            .frame(width: 300, height: 525)
+            .background(Color(.systemBackground))
+            .cornerRadius(12)
+            .shadow(radius: 40)
+            .overlay(Button {
+                isShowingDetail = false
+            } label: {
+                XDismissButton()
+            }, alignment: .topTrailing)
+        }
 }
 
 #Preview {
-    AppetizerDetilsView(appetizer: MocData.sampleAppetizer, isShowingDetailsView: .constant(false))
+    AppetizerDetilsView(appetizer: MocData.sampleAppetizer, isShowingDetail: .constant(false))
 }

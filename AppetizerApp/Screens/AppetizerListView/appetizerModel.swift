@@ -24,7 +24,7 @@ struct Appetizer: Decodable, Identifiable {
 
 struct MocData {
     
-    static let sampleAppetizer = Appetizer(id: 1,
+    static let sampleAppetizer = Appetizer(id: 0,
                                            price: 20.233332,
                                            description: "Seasoned shrimp from the depths of the Atlantic Ocean, Seasoned shrimp from the depths of the Atlantic Ocean",
                                            imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/blackened-shrimp.jpg",
@@ -33,5 +33,36 @@ struct MocData {
                                            calories: 450,
                                            carbs: 3)
 
+    
+    static let orderItemOne = Appetizer(id: 1,
+                                           price: 20.233332,
+                                           description: "Seasoned shrimp from the depths of the Atlantic Ocean, Seasoned shrimp from the depths of the Atlantic Ocean",
+                                           imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/blackened-shrimp.jpg",
+                                           name: "Blackened Shrimp",
+                                           protein: 4,
+                                           calories: 450,
+                                           carbs: 3)
+    
+    static let orderItemTow = Appetizer(id: 2,
+                                           price: 20.233332,
+                                           description: "Seasoned shrimp from the depths of the Atlantic Ocean, Seasoned shrimp from the depths of the Atlantic Ocean",
+                                           imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/blackened-shrimp.jpg",
+                                           name: "Blackened Shrimp",
+                                           protein: 4,
+                                           calories: 450,
+                                           carbs: 3)
+
+    
+    static let orderItemThree = Appetizer(id: 3,
+                                           price: 20.233332,
+                                           description: "Seasoned shrimp from the depths of the Atlantic Ocean, Seasoned shrimp from the depths of the Atlantic Ocean",
+                                           imageURL: "https://seanallen-course-backend.herokuapp.com/images/appetizers/blackened-shrimp.jpg",
+                                           name: "Blackened Shrimp",
+                                           protein: 4,
+                                           calories: 450,
+                                           carbs: 3)
+    
     static let appetizers = [sampleAppetizer, sampleAppetizer, sampleAppetizer, sampleAppetizer]
+    static let orders = [sampleAppetizer, orderItemTow, orderItemTow, orderItemThree]
+
 }

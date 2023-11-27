@@ -9,46 +9,23 @@ import SwiftUI
 
 struct NutritionView: View {
     
-    let appetizer: Appetizer
-
+    let title: String
+    let value: String
+    
     var body: some View {
-        HStack(spacing: 40) {
-            VStack(spacing: 6) {
-                Text("protein")
-                    .bold()
-                    .font(.caption)
-                
-                Text("\(appetizer.protein)")
-                    .foregroundColor(.secondary)
-                    .fontWeight(.semibold)
-                    .italic()
-            }
+        VStack(spacing: 5) {
+            Text(title)
+                .bold()
+                .font(.caption)
             
-            VStack(spacing: 6) {
-                Text("Calories")
-                    .bold()
-                    .font(.caption)
-                
-                Text("\(appetizer.calories)")
-                    .foregroundColor(.secondary)
-                    .fontWeight(.semibold)
-                    .italic()
-            }
-            
-            VStack(spacing: 6) {
-                Text("Carbs")
-                    .bold()
-                    .font(.caption)
-                
-                Text("\(appetizer.carbs)")
-                    .foregroundColor(.secondary)
-                    .fontWeight(.semibold)
-                    .italic()
-            }
+            Text(value)
+                .foregroundColor(.secondary)
+                .fontWeight(.semibold)
+                .italic()
         }
     }
 }
 
 #Preview {
-    NutritionView(appetizer: MocData.sampleAppetizer)
+    NutritionView(title: "Protin", value: "22")
 }

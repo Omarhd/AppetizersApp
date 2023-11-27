@@ -59,5 +59,16 @@ struct AlertContext {
     static let inValidEmail  = AlertItem(title: Text("inValid Email"),
                                             message: Text("Please make sure Email is Correct."),
                                             dismissButton: .default(Text("OK")))
+    
+    //MARK: - Cart Alerts
+    
+    static let successAdded  = AlertItem(title: Text("Done"),
+                                            message: Text("appetizer added successfully."),
+                                            dismissButton: .default(Text("OK")))
+    
+    static let failedToAdded  = AlertItem(title: Text("Failed"),
+                                            message: Text("appetizer failed to be added."),
+                                            dismissButton: .default(Text("OK")))
+
 
 }
